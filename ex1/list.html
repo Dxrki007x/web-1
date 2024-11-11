@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <title>List</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="vgt.png" alt="logo" style="width: 200px;"></a>
+            </div>
+            <nav>
+                <div>
+                    <a href="index.html" class="home">
+                        <img src="home.png" alt="nav1" style="width: 30px;">
+                        <h1>Home</h1>
+                    </a>
+                    <a href="list.html" class="active">
+                        <img src="list.png" alt="nav2" style="width: 30px;">
+                        <h1>List</h1>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!-- Detail section -->
+        <div class="detail">
+            <div class="grids">
+                <ul class="grid-9">
+                    <img src="e1.png" alt="1"onclick="openPopup(this, 'ขี้เหล็ก : แก้ท้องผูก นอนไม่หลับ แก้นอนไม่หลับ แก้เหน็บชา  รักษาโรคบิด แก้ร้อนใน ขับพยาธิ รักษาฝีมะม่วง และลดความดันโลหิตสูง ')"style="width: 400px;">
+                    <img src="e2.png" alt="2" onclick="openPopup(this, 'มะระขี้นก  : รักษาเบาหวาน โรคตับ บรรเทาอาการโรคเก๊าต์ ข้ออักเสบ ยาเขียวลดไข้ แก้โลหิตเป็นพิษ และโรคตับ ')"style="width: 400px;">
+                    <img src="e3.png" alt="3" onclick="openPopup(this, 'ตำลึง : บำรุงสายตา ช่วยลดระดับน้ำตาลในเลือด ต้านอนุมูลอิสระ ช่วยบรรเทาอาการท้องอืด ท้องเฟ้อ บำรุงผิวพรรณ รักษาแผล ผดผื่น ลดไข้และแก้อาการร้อนใน')"style="width: 400px;">
+                    <img src="e4.png" alt="4" onclick="openPopup(this, 'ผักเชียงดา : ช่วยลดน้ำตาล แก้ไข้และแก้หวัด ใช้รักษาอาการท้องผูกและโรคริดสีดวงทวารช่วยกำจัดสารพิษต่างๆ ที่ตกค้างในร่างกาย ช่วยฟื้นฟูและบำรุงตับอ่อนให้แข็งแรง ช่วยลดน้ำหนัก')" style="width: 400px;">
+                    <img src="e5.png" alt="5" onclick="openPopup(this, 'หัวปลี : บำรุงเลือด ขับน้ำนม  ลดการอักเสบในร่างกาย ประจำเดือนมามาก หัวปลีช่วยได้ ช่วยต้านเศร้า และ รักษาโรคกระเพาะ')"style="width: 400px;">
+                    <img src="e6.png" alt="6" onclick="openPopup(this, 'ใบบัวบก : ช่วยบำรุงหัวใจและหลอดเลือด ช่วยลดความดันโลหิตสูงและภาวะหลอดเลือดแข็งตัว')"style="width: 400px;">
+                </ul>
+            </div>
+        </div>
+
+        <!-- Popup Modal -->
+        <div id="popup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <img id="popup-img" src="" alt="Popup Image">
+            <p id="popup-description"></p>
+        </div>
+    </section>
+
+    <script src="listscript.js"></script>
+    </section>
+</body>
+
+</html>
